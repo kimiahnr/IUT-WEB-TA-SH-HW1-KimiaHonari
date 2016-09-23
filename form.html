@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Contact Form</title>
+  <style>.body {
+
+    width:576px;
+    margin-top: 400px;
+  }
+
+  form {
+    margin:20px;
+    width:459px;
+  }
+
+  input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    border-radius:5px;
+  }
+  #submit {
+    width:127px;
+    height:38px;
+    background:#597972;
+
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+
+  }
+
+  #submit:hover {
+    opacity:.9;
+  }</style>
+</head>
+<body>
+<h1>Filled the form :</h1>
+<form action="/formhandler"  enctype="multipart/form-data">
+  <label>Name</label>
+  <input name="name" placeholder="Type Here">
+
+  <label>Email</label>
+  <input name="email" type="email" placeholder="Type Here">
+
+  <label>Message</label>
+  <textarea name="message" placeholder="Type Here"></textarea>
+
+  <input id="submit" name="submit" type="submit" value="Submit">
+
+</form>
+</body>
+</html>
